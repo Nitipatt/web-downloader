@@ -78,6 +78,7 @@ async function execute({
         }
       } catch (e) {}
     });
+    if(!page)break
   }
 }
 

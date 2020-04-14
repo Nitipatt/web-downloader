@@ -1,0 +1,28 @@
+{
+  "name": "web-downloader",
+  "version": "1.0.0",
+  "description": "Web crawler to find some file and download it",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "download-to-file": "^2.1.0",
+    "prompt-sync": "^4.2.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nitipatt/web-downloader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nitipatt/web-downloader/issues"
+  },
+  "homepage": "https://github.com/Nitipatt/web-downloader#readme"
+}

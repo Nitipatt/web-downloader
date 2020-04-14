@@ -68,7 +68,7 @@ async function execute({
   destination = undefined,
 } = {}) {
   while (true) {
-    let dLink = await getDownloadLink(url + (page ? page++ : ""), query);
+    let dLink = await getDownloadLink(url.replace('$PAGE',(page ? page++ : "")), query);
     if (dLink.length == 0) break;
     dLink.forEach(async (element) => {
       try {
@@ -89,7 +89,6 @@ async function execute({
     );
   }
   promptData["isPage"] = promptData["url"].includes("$PAGE");
-  promptData["url"] = promptData["url"].replace('$PAGE','')
   while (promptData["isPage"] && !promptData["page"]) {
     promptData["page"] = prompt("Enter starting page: ");
   }
